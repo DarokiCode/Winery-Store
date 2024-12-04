@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #5a1a1a;
+    color: white;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px; /* Adjust logo size */
+    height: 70px;
+    margin-right: 1rem; /* Space between logo and title */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+.main-content {
+    width: 80%;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.photo-item, .accessory-item {
+    text-align: center;
+}
+
+.photo-item img, .accessory-item img {
+    width: 150px; /* Set fixed width */
+    height: 200px; /* Set fixed height */
+    object-fit: cover; /* Ensures the image fits the dimensions while maintaining aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-item img:hover, .accessory-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+/* Accessories Gallery Styles */
+.accessories-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.accessory-item p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: auto; /* Push the footer to the bottom */
+}
